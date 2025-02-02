@@ -47,7 +47,11 @@ $result = $bool1 + $bool2; // int(boolean to string), so 1 + 0
 $result = $null + $null; // 0 + 0, still an int
 
 
+// explicit conversion - we can convert data type whatever eyong gusto nating ipalit
+$result = (string)$num1; // int to string: string(1) "5"
+$result = (int)$num3; // string to int: int(20)
+$result = (bool)$num1; // int to bool. any nuber wil alwasy be true except 0
+
 var_dump($result);
 
-// this is a comment
 ?>
