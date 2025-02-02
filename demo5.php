@@ -49,5 +49,5 @@ $result = $null + $null; // 0 + 0, still an int
 
 var_dump($result);
 
-
+// this is a comment
 ?>
