@@ -58,14 +58,11 @@ var_dump($president);
 echo '<br>';
 
 // resource - it opens file
-$file = fopen('sample.txt', 'r'); // r is read
+//$file = fopen('sample.txt', 'r'); // r is read
 echo getType($file); // resource. basta nasa loob ng text folder
-
-
-
 
 
 // In summary, php already knows what type of variable you are declaring. 
 // Unlike java, you need to declare the type
-
+// Pia Macalanda
 ?>

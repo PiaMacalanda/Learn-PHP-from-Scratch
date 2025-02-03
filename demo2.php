@@ -17,9 +17,9 @@ CONVENTIONS:
 */
 
 // learning variable declaration in php ლ(╹◡╹ლ)
-$title = 'PHP From Scratch';
-$heading_1 = 'Learn PHP from Scratchu~';
-$heading_2 = 'Welcome to the course! #PHPvariableDec';
+$title = 'PHP From Scratch - Pia';
+$heading_1 = 'Learn PHPH from Scratch ₊˚ʚ 🌱 ₊˚✧ ﾟ.';
+$heading_2 = 'Welcome to the course PHP and Laravel🍓 #lesson1d02 #PHPvariableDec';
 $body = 'In this course, you will learn the fundamentals of the PHP language';
 
 ?>
@@ -36,7 +36,7 @@ $body = 'In this course, you will learn the fundamentals of the PHP language';
 </head>
 
 <body class="bg-gray-100">
-    <header class="bg-red-900 text-white p-4">
+    <header class="bg-pink-400 text-white p-4">
         <div class="container mx-auto">
             <h1 class="text-3xl font-semibold"><?= $heading_1 ?></h1>
         </div>
@@ -48,5 +48,5 @@ $body = 'In this course, you will learn the fundamentals of the PHP language';
         </div>
     </div>
 </body>
-
+<!-- Pia Macalanda -->
 </html>

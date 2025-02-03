@@ -11,16 +11,18 @@
 <body class="bg-gray-100">
     <header class="bg-pink-500 text-white p-4">
         <div class="container mx-auto">
-            <h1 class="text-3xl font-semibold">Learn PHP From Scratch</h1>
+            <h1 class="text-3xl font-semibold">Learn PHPH from Scratch ₊˚ʚ 🌱 ₊˚✧ ﾟ.</h1>
         </div>
     </header>
     <div class="container mx-auto p-4 mt-4">
         <div class="bg-white rounded-lg shadow-md p-6">
-            <h2 class="text-2xl font-semibold mb-4">Welcome To The Course</h2>
+            <h2 class="text-2xl font-semibold mb-4">Welcome To The Course🍓 #l1demo5 #typeCasting</h2>
             <p>We are going to learn Type Casting Juggling!</p>
         </div>
     </div>
 </body>
+
+<!-- Pia Macalanda -->
 
 </html>
 
