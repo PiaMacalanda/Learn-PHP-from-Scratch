@@ -1,4 +1,5 @@
-# Application Developent Lesson 1: PHP Data types, Variables and Built-in Functions
+# Application Developent Lesson 1: 
+## PHP Data types, Variables and Built-in Functions
 Each lesson 1 demo consist of the following topic:
 
 **Demo1** - PHP Tags Printing and Comments
