@@ -10,5 +10,3 @@ Each lesson 1 demo consists of the following topic:
 - **demo6** - PHP Arithmetic and Math Functions
 - **demo7** - PHP String Functions
 - **demo8** - PHP Date Functions
-
-### Instructed by. Prof. Nelson C. Gaspar
