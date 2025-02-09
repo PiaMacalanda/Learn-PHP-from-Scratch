@@ -52,20 +52,20 @@
         ]
     ];
 
-    array_push($listings, [
+   $listing[] = [
         'id' => 4,
         'job_title' => 'Graphic Artist',
         'company' => 'ADOBE',
         'email' => 'princess@adobe.com',
         'contact_no' => '09208456544',
         'skills' => ['Photoshop', 'Bootstrap', 'Flutter']
-    ]);
+    ];
     
     $jobTitle2 = $listings[1]['job_title'];
     $company2 = $listings[1]['company'];
     $email2 = $listings[1]['email'];
 
-    $selectedSkills3 = implode(', ', [$listings[2]['skills'][0], $listings[2]['skills'][2]]);
+    $selectedSkills3 = $listings[2]['skills'][0].' and '.$listings[2]['skills'][2];
 
 
     $output = "
