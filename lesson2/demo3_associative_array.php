@@ -5,8 +5,31 @@ $sentence = 'Welcome To The Course🍓';
 $hashtag = '#lesson2d03 #associativeArray';
 $header2 = $sentence.$hashtag;
 
+// Associative arrays - arrays that use named keys
+// that you assign to retrieve an element
+
 $output = null;
 
+$user = [
+    'name' => 'Himiko',
+    'email' => 'himiko.toga@gmail.com',
+    'password' => 'iLoveBlood',
+    'hobbies' => ['Drink Blood', 'Disguise as Someone', 'Admire Ochaco', ]
+];
+
+// Accessing elements using key instead of index number
+$output = $user['name'];
+$output = $user['email'];
+
+// Accessing nested elements
+$output = $user['hobbies'][2];
+
+// Adding new element
+$user['address'] = '123 Main Street';
+
+// Remove element
+unset($user['address']);
+unset($user['hobbies'][1]);
 
 ?>
 
@@ -33,8 +56,8 @@ $output = null;
             <h2 class="text-2xl font-semibold mb-4"><?= $header2 ?></h2>
             <!-- Output -->
              <p class="text-xl"><?= $output?></p>
-             <h2 class="rtext-xl font-semibold my-4">Use Array: </h2>
-             <pre><?= print_r($user); ?></pre>
+             <h2 class="text-xl font-semibold my-4">User Array: </h2>
+             <pre><?php print_r($user); ?></pre>
         </div>
     </div>
 </body>

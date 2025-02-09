@@ -31,6 +31,7 @@
 </html>
 
 <?php
+// Introduction to Array
 
 $names = array('John', 'Jack', 'Jill');
 $numbers = [1, 2, 3, 4, 5, 6];
