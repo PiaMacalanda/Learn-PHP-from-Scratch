@@ -130,4 +130,5 @@ $output = implode(', ', $users);
 echo $output;
 // output: user2, user1, user3
 
+// 🔗PHP documentation (https://www.php.net/manual/en/ref.array.php)
 ?>
