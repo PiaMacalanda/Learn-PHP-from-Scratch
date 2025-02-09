@@ -1,26 +1,31 @@
 <?php
 $header1 = 'Learn PHP from Scratch ₊˚ʚ 🌱 ₊˚✧ ﾟ.';
 $sentence = 'Lab Activity 2🍓🎮';
-$hashtag = '#lesson2 #sumOfAnArray';
+$hashtag = '#lesson2 #colorsArray';
 $header2 = $sentence.' '.$hashtag;
-$challenge = '<b>Challenge 1:</b> Sum of an Array🔢';
+$challenge = '<b>Challenge 2:</b> Colors Array🎨';
 
 $body = <<< 'EOD'
             Follow the instructions below:
+
+            1. Sort the `$colors` array in ascending order. 
+            2. Add 'purple' and 'orange' to the end of the array.
+            3. Add 'Red Apple' to the beginning of the array.
+            4. Replace the green color of the array to Green mango.
+
+            You should end up with the output of the following array: 
+            Array ( [0] => Red Apple [1] => blue [2] => Green mango [3] => red [4] => yellow [5] => purple [6] => orange )
             
-            1. Create an array of numbers: 1,2,3,4,5
-            2. Get the sum of all of the numbers combined and put into a variable. $sum
-            3. Count the number of elements in the array and put into a variable. $quantity
-            4. Print out 'The sum of the {quantity} numbers is: {sum} '. For example, if the array is [1, 2, 3, 4, 5], the output should be 'The sum of the 5 numbers is: 15'.
             EOD; // heredoc
 
+    //Given array color value
+    $colors = ['red', 'blue', 'green', 'yellow'];  //don't make  any changes on this to do the challenge!
+
     //Your Solution goes here...
-
-    $numbers = [1, 2, 3, 4, 5];
-    $sum = array_sum($numbers);
-    $quantity = count($numbers);
-
-    $output = "The sum of the $quantity numbers is: $sum";
+    sort($colors);
+    array_push($colors, 'purple', 'orange');
+    array_unshift($colors, 'Red Apple');
+    $colors[2] = 'Green mango'; // or $colors[array_search('green', $colors)] = 'Green mango';
     
 ?>
 
@@ -46,9 +51,9 @@ $body = <<< 'EOD'
         <div class="bg-white rounded-lg shadow-md p-6">
             <h2 class="text-2xl font-semibold mb-4"><?= $header2 ?></h2>
              <h2 class="rtext-xl font-semibold my-4"><?= $challenge ?></h2>
-             <p><?= nl2br($body)?></p>
+             <p><?= nl2br($body) ?></p>
              <!-- Output -->
-             <p><br><b>Solution: </b><?= $output?></p>
+             <p><br><b>Solution: </b><?php print_r($colors)?></p>
         </div>
     </div>
 </body>

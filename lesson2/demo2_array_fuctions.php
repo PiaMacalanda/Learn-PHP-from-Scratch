@@ -48,7 +48,7 @@ echo '<pre>';
 // var_dump($users); // to check output
 echo '<pre>';
 
-// 🍓sort() - sorts an indexed array in descending order
+// 🍓rsort() - sorts an indexed array in descending order
 rsort($ids);
 rsort($users);
 
@@ -101,7 +101,7 @@ echo '<pre>';
 // var_dump($ids2);
 echo '<pre>';
 
-// 🍓array_sub() - calculate SUM of values of an array
+// 🍓array_sum() - calculate SUM of values of an array
 $output = 'Sum of IDs: ' . array_sum($ids);
 
 // echo $output; 
