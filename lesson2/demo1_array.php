@@ -31,30 +31,29 @@
 </html>
 
 <?php
-// Introduction to Array
 
-$names = array('John', 'Jack', 'Jill');
-$numbers = [1, 2, 3, 4, 5, 6];
+    // Introduction to Array
 
-//var_dump($names); // shows number of arrays, index, value, and string length *since string*
+    $names = array('John', 'Jack', 'Jill');
+    $numbers = [1, 2, 3, 4, 5, 6];
 
-// var_dump($names[1]); // output: string(4) "Jack"
+    //var_dump($names); // shows number of arrays, index, value, and string length *since string*
 
-//echo $names[0]; // output: John
+    // var_dump($names[1]); // output: string(4) "Jack"
 
-$numbers[] = 100; // it adds 100 to the $numbers
-$numbers[] = 101;
+    //echo $names[0]; // output: John
 
-$numbers[3] = 400; // you can replace value on specific index
+    $numbers[] = 100; // it adds 100 to the $numbers
+    $numbers[] = 101;
 
-unset($numbers[3]); // to remove
+    $numbers[3] = 400; // you can replace value on specific index
 
-$numbers = array_values($numbers); // reindex - to correct index num after unset action
+    unset($numbers[3]); // to remove
 
-echo '<pre>';
-var_dump($numbers);
-echo '<pre>';
+    $numbers = array_values($numbers); // reindex - to correct index num after unset action
 
-
+    echo '<pre>';
+    var_dump($numbers);
+    echo '<pre>';
 
 ?>

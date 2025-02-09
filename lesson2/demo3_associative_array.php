@@ -1,36 +1,36 @@
-
 <?php
-$header1 = 'Learn PHP from Scratch ₊˚ʚ 🌱 ₊˚✧ ﾟ.';
-$sentence = 'Welcome To The Course🍓';
-$hashtag = '#lesson2d03 #associativeArray';
-$header2 = $sentence.$hashtag;
 
-// Associative arrays - arrays that use named keys
-// that you assign to retrieve an element
+    $header1 = 'Learn PHP from Scratch ₊˚ʚ 🌱 ₊˚✧ ﾟ.';
+    $sentence = 'Welcome To The Course🍓';
+    $hashtag = '#lesson2d03 #associativeArray';
+    $header2 = $sentence.$hashtag;
 
-$output = null;
+    // Associative arrays - arrays that use named keys
+    // that you assign to retrieve an element
 
-$user = [
-    'name' => 'Himiko',
-    'email' => 'himiko.toga@gmail.com',
-    'password' => 'iLoveBlood',
-    'hobbies' => ['Drink Blood', 'Disguise as Someone', 'Admire Ochaco', ]
-];
+    $output = null;
 
-// Accessing elements using key instead of index number
-$output = $user['name'];
-$output = $user['email'];
+    $user = [
+        'name' => 'Himiko',
+        'email' => 'himiko.toga@gmail.com',
+        'password' => 'iLoveBlood',
+        'hobbies' => ['Drink Blood', 'Disguise as Someone', 'Admire Ochaco', ]
+    ];
 
-// Accessing nested elements
-$output = $user['hobbies'][2];
+    // Accessing elements using key instead of index number
+    $output = $user['name'];
+    $output = $user['email'];
 
-// Adding new element
-$user['address'] = '123 Main Street';
+    // Accessing nested elements
+    $output = $user['hobbies'][2];
 
-// Remove element
-unset($user['address']);
-unset($user['hobbies'][1]);
+    // Adding new element
+    $user['address'] = '123 Main Street';
 
+    // Remove element
+    unset($user['address']);
+    unset($user['hobbies'][1]);
+    
 ?>
 
 <!DOCTYPE html>

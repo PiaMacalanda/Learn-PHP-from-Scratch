@@ -1,22 +1,22 @@
 <?php
-$header1 = 'Learn PHP from Scratch ₊˚ʚ 🌱 ₊˚✧ ﾟ.';
-$sentence = 'Lab Activity 2🍓🎮';
-$hashtag = '#lesson2 #colorsArray';
-$header2 = $sentence.' '.$hashtag;
-$challenge = '<b>Challenge 2:</b> Colors Array🎨';
+    $header1 = 'Learn PHP from Scratch ₊˚ʚ 🌱 ₊˚✧ ﾟ.';
+    $sentence = 'Lab Activity 2🍓🎮';
+    $hashtag = '#lesson2 #colorsArray';
+    $header2 = $sentence.' '.$hashtag;
+    $challenge = '<b>Challenge 2:</b> Colors Array🎨';
 
-$body = <<< 'EOD'
-            Follow the instructions below:
+    $body = <<< 'EOD'
+                Follow the instructions below:
 
-            1. Sort the `$colors` array in ascending order. 
-            2. Add 'purple' and 'orange' to the end of the array.
-            3. Add 'Red Apple' to the beginning of the array.
-            4. Replace the green color of the array to Green mango.
+                1. Sort the `$colors` array in ascending order. 
+                2. Add 'purple' and 'orange' to the end of the array.
+                3. Add 'Red Apple' to the beginning of the array.
+                4. Replace the green color of the array to Green mango.
 
-            You should end up with the output of the following array: 
-            Array ( [0] => Red Apple [1] => blue [2] => Green mango [3] => red [4] => yellow [5] => purple [6] => orange )
-            
-            EOD; // heredoc
+                You should end up with the output of the following array: 
+                Array ( [0] => Red Apple [1] => blue [2] => Green mango [3] => red [4] => yellow [5] => purple [6] => orange )
+                
+                EOD; // heredoc
 
     //Given array color value
     $colors = ['red', 'blue', 'green', 'yellow'];  //don't make  any changes on this to do the challenge!
@@ -26,7 +26,7 @@ $body = <<< 'EOD'
     array_push($colors, 'purple', 'orange');
     array_unshift($colors, 'Red Apple');
     $colors[2] = 'Green mango'; // or $colors[array_search('green', $colors)] = 'Green mango';
-    
+        
 ?>
 
 <!DOCTYPE html>

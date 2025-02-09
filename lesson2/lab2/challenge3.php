@@ -1,25 +1,25 @@
 <?php
-$header1 = 'Learn PHP from Scratch ₊˚ʚ 🌱 ₊˚✧ ﾟ.';
-$sentence = 'Lab Activity 2🍓🎮';
-$hashtag = '#lesson2 #jobListingsArray';
-$header2 = $sentence.' '.$hashtag;
-$challenge = '<b>Challenge 3:</b> Job Listings Array🏢';
+    $header1 = 'Learn PHP from Scratch ₊˚ʚ 🌱 ₊˚✧ ﾟ.';
+    $sentence = 'Lab Activity 2🍓🎮';
+    $hashtag = '#lesson2 #jobListingsArray';
+    $header2 = $sentence.' '.$hashtag;
+    $challenge = '<b>Challenge 3:</b> Job Listings Array🏢';
 
-$body = <<< 'EOD'
-            Follow the instructions below:
+    $body = <<< 'EOD'
+                Follow the instructions below:
 
-            1. Create a multi-dimensional array of associative arrays of 3 job listings shown above.
-            -Also add an array field for skills. The skills array should be an array of strings with each skill a person has.
-            -example   'skills' => ['PHP', 'MySQL', 'JavaScript']
-            note: note for the name of array varible use this $listings[];
+                1. Create a multi-dimensional array of associative arrays of 3 job listings shown above.
+                -Also add an array field for skills. The skills array should be an array of strings with each skill a person has.
+                -example   'skills' => ['PHP', 'MySQL', 'JavaScript']
+                note: note for the name of array varible use this $listings[];
 
-            2.Create a new record using the `array_push()` function. The new record should have the same fields as the others.
-                4   Graphic Artist   ADOBE       princess@adobe.com   09208456544  Photoshop, Bootstrap, Flutter 
+                2.Create a new record using the `array_push()` function. The new record should have the same fields as the others.
+                    4   Graphic Artist   ADOBE       princess@adobe.com   09208456544  Photoshop, Bootstrap, Flutter 
 
-            3. Print out the job_title,company and email of the second job listing from the array.
-            4. Print out the first and third skill of the third job listing in the array.
-                
-            EOD; // heredoc
+                3. Print out the job_title,company and email of the second job listing from the array.
+                4. Print out the first and third skill of the third job listing in the array.
+                    
+                EOD; // heredoc
 
     //Your Solution goes here...
 

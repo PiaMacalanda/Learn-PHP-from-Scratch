@@ -1,7 +1,7 @@
 <?php
 
-$output = null;
-$user = null;
+    $output = null;
+    $user = null;
 
 ?>
 
