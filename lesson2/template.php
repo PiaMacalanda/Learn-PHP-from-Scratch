@@ -1,9 +1,10 @@
 <?php
 
     $header1 = 'Learn PHP from Scratch ₊˚ʚ 🌱 ₊˚✧ ﾟ.';
-    $sentence = 'Welcome To The Course🍓';
-    $hashtag = '#lesson2d04 #multidimensionalArray';
-    $header2 = $sentence.$hashtag;
+    $sentence = 'Lab Activity 2🍓🎮';
+    $hashtag = '#lesson2 #jobListingsArray';
+    $header2 = $sentence.' '.$hashtag;
+    $challenge = '<b>Challenge 3:</b> Job Listings Array🏢';
 
     // Your solution goes here..
 
