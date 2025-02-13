@@ -15,7 +15,7 @@ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open so
 - **demo7** - PHP String Functions
 - **demo8** - PHP Date Functions
 
-### 🐘[Lesson 2: PHP Array and Iteration](lesson2)
+### 🐘Lesson 2: PHP Array and Iteration
 [Lesson 2](lesson2) demo consists of the following topics:
 - **demo1** - PHP Intro to Array
 - **demo2** - PHP Array Functions
