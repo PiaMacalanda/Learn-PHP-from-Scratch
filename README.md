@@ -1,10 +1,11 @@
 # Basics of PHP: Hypertext Preprocessor
 
-What is PHP?
-    PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML. [Learn more about PHP](https://www.php.net/manual/en/).
+### What is PHP?
 
-### 🐘Lesson 1: PHP Data Types, Variables, and Built-in Functions
-[Lesson 1](lesson1) demo consists of the following topics:
+PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML. [Learn more about PHP](https://www.php.net/manual/en/).
+
+### 🐘[Lesson 1: PHP Data Types, Variables, and Built-in Functions](lesson1)
+Lesson 1 demo consists of the following topics:
 - **demo1** - PHP Tags Printing and Comments
 - **demo2** - PHP Variables
 - **demo3** - PHP Data Types
@@ -14,7 +15,7 @@ What is PHP?
 - **demo7** - PHP String Functions
 - **demo8** - PHP Date Functions
 
-### 🐘Lesson 2: PHP Array and Iteration
+### 🐘[Lesson 2: PHP Array and Iteration](lesson2)
 [Lesson 2](lesson2) demo consists of the following topics:
 - **demo1** - PHP Intro to Array
 - **demo2** - PHP Array Functions
