@@ -4,8 +4,8 @@
 
 PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML. [Learn more about PHP](https://www.php.net/manual/en/).
 
-### 🐘[Lesson 1: PHP Data Types, Variables, and Built-in Functions](lesson1)
-Lesson 1 demo consists of the following topics:
+### 🐘Lesson 1: PHP Data Types, Variables, and Built-in Functions
+[Lesson 1](lesson1) demo consists of the following topics:
 - **demo1** - PHP Tags Printing and Comments
 - **demo2** - PHP Variables
 - **demo3** - PHP Data Types
