@@ -39,6 +39,7 @@
             <div class="bg-white rounded-lg shadow-md p-6">
                 <h2 class="text-2xl font-semibold mb-4"><?= $header2 ?></h2>
                 <h2 class="text-xl font-semibold my-4"><?= $challenge ?></h2>
+                <p class="font-bold mb-4"><br>Solution: </p>
                 <!-- Output -->
                 <p class="text-xl"><?= $output?></p>
             </div>

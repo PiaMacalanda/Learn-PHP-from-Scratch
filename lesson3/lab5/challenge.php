@@ -7,7 +7,7 @@
     $challenge = '<b>Challenge 5:</b> Name Challenge🏢';
 
     $body = <<< 'EOD'
-            Instructions
+            Instructions:
 
             1. Take the array of names below and loop through them. The type of loop is up to you.
             $names = ['ALEC', 'BETH', 'CAROLINE', 'DAve', 'ElAnor', 'ANNa', 'Freddie', 'AdaM'];
@@ -21,10 +21,17 @@
             5. Make all names lowercase before printing them.
     EOD; // heredoc
 
-    // Your solution goes here..
-
     $output = '';
 
+    // Your solution goes here..
+    $names = ['ALEC', 'BETH', 'CAROLINE', 'DAve', 'ElAnor', 'ANNa', 'Freddie', 'AdaM'];
+
+    foreach ($names as $name) {
+        if (strtoupper($name[0]) === 'A') {
+            continue;
+        }
+        $output .= strtolower(strrev($name)) . "<br>";
+    }
 ?>
 
 <!DOCTYPE html>
@@ -48,6 +55,8 @@
             <div class="bg-white rounded-lg shadow-md p-6">
                 <h2 class="text-2xl font-semibold mb-4"><?= $header2 ?></h2>
                 <h2 class="text-xl font-semibold my-4"><?= $challenge ?></h2>
+                <p><?= nl2br($body)?></p>
+                <p class="font-bold mb-4"><br>Solution: </p>
                 <!-- Output -->
                 <p class="text-xl"><?= $output?></p>
             </div>
