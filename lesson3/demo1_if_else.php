@@ -4,14 +4,44 @@ $sentence = 'Welcome To The Course🍓';
 $hashtag = '#lesson3d01 #ifElseStatement';
 $header2 = $sentence.$hashtag;
 
-/* 
-    Message in printing values:
-        Concatenate (.=) each message to $output – This ensures all outputs are collected.
-        example: $output .='This is a concatinated stored output'; 
-*/
-
 $output = '';
 
+$age = 14;
+$ave = 80;
+
+// if statement
+if ($age >= 18) {
+    $output .= 'You are allowed to vote.<br>';
+}
+
+// if-else
+if ($ave >= 75) {
+    $output .= 'Your average is Passed.<br>';
+} else {
+    $output .= 'Your average is Failed.<br>';
+}
+
+// nested if statement
+if ($age >= 18) {
+    $output .= 'You are allowed to vote.<br>';
+} else {
+    if ($age == 17) {
+        $output .= 'Wait for 1 year to vote.<br>';
+    } else {
+        $output .= 'You are not allowed to vote.<br>';
+    }
+}
+
+// if else if
+if ($ave == 100) {
+    $output .= 'Your average is Excellent.<br>';
+} else if ($ave == 90) {
+    $output .= 'Your average is Very Good.<br>';
+} else if ($ave >= 80) {
+    $output .= 'Your average is Good.<br>';
+} else {
+    $output .= 'Your average is Failed.<br>';
+}
 
 ?>
 
@@ -36,7 +66,6 @@ $output = '';
     <div class="container mx-auto p-4 mt-4">
         <div class="bg-white rounded-lg shadow-md p-6">
             <h2 class="text-2xl font-semibold mb-4"><?= $header2 ?></h2>
-            <!-- Output -->
             <p class="text-gray-700"><?= $output ?></p>
         </div>
     </div>

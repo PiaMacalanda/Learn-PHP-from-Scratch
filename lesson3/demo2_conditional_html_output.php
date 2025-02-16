@@ -1,16 +1,13 @@
 <?php
 $header1 = 'Learn PHP from Scratch ₊˚ʚ 🌱 ₊˚✧ ﾟ.';
 $sentence = 'Welcome To The Course🍓';
-$hashtag = '#lesson3d01 #ifElseStatement';
+$hashtag = '#lesson3d02 #conditionalHTMLOutput';
 $header2 = $sentence.$hashtag;
 
-/* 
-    Message in printing values:
-        Concatenate (.=) each message to $output – This ensures all outputs are collected.
-        example: $output .='This is a concatinated stored output'; 
-*/
-
 $output = '';
+
+$isLoggedIn = false;
+$name = 'Pia';
 
 
 ?>
@@ -37,7 +34,15 @@ $output = '';
         <div class="bg-white rounded-lg shadow-md p-6">
             <h2 class="text-2xl font-semibold mb-4"><?= $header2 ?></h2>
             <!-- Output -->
-            <p class="text-gray-700"><?= $output ?></p>
+            <?php if($isLoggedIn && $name) :?>
+                <p>Welcome <?= $name ?>!ヾ(＠⌒ー⌒＠)ノ</p>
+
+            <?php elseif ($isLoggedIn) :?>
+                <p>Welccome to the app!</p>
+
+            <?php else: ?>
+                <p>Please log in.</p>
+            <?php endif; ?>
         </div>
     </div>
 </body>
