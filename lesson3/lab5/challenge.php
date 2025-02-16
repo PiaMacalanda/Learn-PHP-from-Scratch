@@ -1,7 +1,7 @@
 <?php
 
     $header1 = 'Learn PHP from Scratch ₊˚ʚ 🌱 ₊˚✧ ﾟ.';
-    $sentence = 'Lab Activity 2🍓🎮';
+    $sentence = 'Lab Activity 5🍓🎮';
     $hashtag = '#lesson3 #arrayLoop';
     $header2 = $sentence.' '.$hashtag;
     $challenge = '<b>Challenge 5:</b> Name Challenge🏢';
