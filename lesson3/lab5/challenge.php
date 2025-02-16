@@ -2,14 +2,23 @@
 
     $header1 = 'Learn PHP from Scratch ₊˚ʚ 🌱 ₊˚✧ ﾟ.';
     $sentence = 'Lab Activity 2🍓🎮';
-    $hashtag = '#lesson2 #jobListingsArray';
+    $hashtag = '#lesson3 #arrayLoop';
     $header2 = $sentence.' '.$hashtag;
-    $challenge = '<b>Challenge 3:</b> Job Listings Array🏢';
+    $challenge = '<b>Challenge 5:</b> Name Challenge🏢';
 
     $body = <<< 'EOD'
-            Follow the instructions below:
+            Instructions
 
-            Create a multiplication table using a nested `for` loop.
+            1. Take the array of names below and loop through them. The type of loop is up to you.
+            $names = ['ALEC', 'BETH', 'CAROLINE', 'DAve', 'ElAnor', 'ANNa', 'Freddie', 'AdaM'];
+
+            2. Within the loop, use a conditional statement to check if the first letter of the name is 'A'.
+
+            3. If the first letter is 'A', skip that name and continue to the next iteration.
+
+            4. If the first letter is not 'A', reverse the string.
+
+            5. Make all names lowercase before printing them.
     EOD; // heredoc
 
     // Your solution goes here..
