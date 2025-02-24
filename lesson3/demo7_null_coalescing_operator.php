@@ -1,51 +1,30 @@
 <?php
 $header1 = 'Learn PHP from Scratch ₊˚ʚ 🌱 ₊˚✧ ﾟ.';
 $sentence = 'Welcome To The Course🍓';
-$hashtag = '#lesson3d04 #conditionalInLoop';
+$hashtag = '#lesson3d07 #nullCoalesingOperator';
 $header2 = $sentence.$hashtag;
 
 $output = '';
 
-// while ($number <= 10) {
-//     if ($number %2 == 0) {
-//         $output .= $number. 'is even <br>';
-//     }
-    
-//     else {
-//         $output .= $number. 'is odd <br>';
-//     }
-//     $number++;
-// }
+// below is a  ternary operator
+// $favoriteColor = 'Red';
+// $secondFavoriteColor = 'Yellow';
+// $color = isset($favoriteColor) ? $favoriteColor : 'blue';
+// $output = $color;
 
-// break out of a loop
-// for ($i=1; $i <= 10; $i++) { 
-//     if ($i == 5) {
-//         break;
-//     }
-//     $output .= $i . '<br>';
-// }
+// below is a null coalescing operator
+// $color = $favoriteColor ?? 'blue';
+// $output = $color;
 
-// // skip and continue
-// for ($i=1; $i <= 10; $i++) { 
-//     if ($i == 5) {
-//         continue;
-//         $output .= $i . ' 5 is found' . '<br>';
-//     }
-//     $output .= $i . '<br>';
-// }
+// Ternary Opertator
+// $color2 = isset($favoriteColor) ? $favoriteColor : (isset($secondFavoriteColor) ? $secondFavoriteColor : 'blue');
+// $output = $color2;
 
-$studentGrades = array (
-    'John' => 75,
-    'Jack' => 92,
-    'Jill' => 100,
-    'Joan' => 80
-);
+$color2 = $favoriteColor ?? $secondFavoriteColor ?? 'blue';
+$output = $color2;
 
-foreach ($studentGrades as $name => $grade) {
-    if ($grade >= 90) {
-        $output .= $name . ' has an excellent grade <br>';
-    }
-}
+
+
 
 
 ?>

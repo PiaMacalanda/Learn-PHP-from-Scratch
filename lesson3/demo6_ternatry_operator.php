@@ -1,52 +1,22 @@
 <?php
 $header1 = 'Learn PHP from Scratch ₊˚ʚ 🌱 ₊˚✧ ﾟ.';
 $sentence = 'Welcome To The Course🍓';
-$hashtag = '#lesson3d04 #conditionalInLoop';
+$hashtag = '#lesson3d06 #ternaryOperator';
 $header2 = $sentence.$hashtag;
 
 $output = '';
 
-// while ($number <= 10) {
-//     if ($number %2 == 0) {
-//         $output .= $number. 'is even <br>';
-//     }
-    
-//     else {
-//         $output .= $number. 'is odd <br>';
-//     }
-//     $number++;
+$score = 50;
+
+// if ($score) {
+//     $output = 'High Score';
+// } else {
+//     $output = 'Low Score';
 // }
 
-// break out of a loop
-// for ($i=1; $i <= 10; $i++) { 
-//     if ($i == 5) {
-//         break;
-//     }
-//     $output .= $i . '<br>';
-// }
-
-// // skip and continue
-// for ($i=1; $i <= 10; $i++) { 
-//     if ($i == 5) {
-//         continue;
-//         $output .= $i . ' 5 is found' . '<br>';
-//     }
-//     $output .= $i . '<br>';
-// }
-
-$studentGrades = array (
-    'John' => 75,
-    'Jack' => 92,
-    'Jill' => 100,
-    'Joan' => 80
-);
-
-foreach ($studentGrades as $name => $grade) {
-    if ($grade >= 90) {
-        $output .= $name . ' has an excellent grade <br>';
-    }
-}
-
+// ternaru operator
+$result = $score > 40 ? 'High Score' : 'Low Score';
+$output = $result;
 
 ?>
 
