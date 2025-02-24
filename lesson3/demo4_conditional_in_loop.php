@@ -1,61 +1,51 @@
 <?php
 $header1 = 'Learn PHP from Scratch ₊˚ʚ 🌱 ₊˚✧ ﾟ.';
 $sentence = 'Welcome To The Course🍓';
-$hashtag = '#lesson3d01 #ifElseStatement';
+$hashtag = '#lesson3d04 #conditionalInLoop';
 $header2 = $sentence.$hashtag;
-
-/* 
-    Message in printing values:
-        Concatenate (.=) each message to $output – This ensures all outputs are collected.
-        example: $output .='This is a concatinated stored output'; 
-*/
 
 $output = '';
 
-$number = 1;
+// while ($number <= 10) {
+//     if ($number %2 == 0) {
+//         $output .= $number. 'is even <br>';
+//     }
+    
+//     else {
+//         $output .= $number. 'is odd <br>';
+//     }
+//     $number++;
+// }
 
-/* while ($number <= 10) {
-    if ($number % 2 == 0) {
-        $output .= $number . ' is even.<br>';
-    } else {
-        $output .= $number . ' is odd.<br>';
-    }
-    $number++;
-} */
+// break out of a loop
+// for ($i=1; $i <= 10; $i++) { 
+//     if ($i == 5) {
+//         break;
+//     }
+//     $output .= $i . '<br>';
+// }
 
-// 🍓break out of loop
-/* for ($i=1; $i <= 10; $i++) { 
-    if ($i == 5) {
-        break;
-    }
-    $output .= $i . '<br>';
-} */
+// // skip and continue
+// for ($i=1; $i <= 10; $i++) { 
+//     if ($i == 5) {
+//         continue;
+//         $output .= $i . ' 5 is found' . '<br>';
+//     }
+//     $output .= $i . '<br>';
+// }
 
-//🍓skip and continue
-/* for ($i=1; $i <= 10; $i++) { 
-    if ($i ==5) {
-        // $output .= $i . ' 5 is found <br>';
-        continue;
-    }
-    $output .= $i . '<br>';
-} */
-
-$studentGrades = array(
+$studentGrades = array (
     'John' => 75,
     'Jack' => 92,
     'Jill' => 100,
     'Joan' => 80
 );
 
-foreach ($studentGrades as $name => $grade){
+foreach ($studentGrades as $name => $grade) {
     if ($grade >= 90) {
-        $output .= $name . ' has and excellent grade <br>';
+        $output .= $name . ' has an excellent grade <br>';
     }
-};
-
-
-
-
+}
 
 
 ?>
