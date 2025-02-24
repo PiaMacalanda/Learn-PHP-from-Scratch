@@ -27,7 +27,7 @@ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open so
 - **demo8** - PHP Multi Dimentional Array Iteration
 
 ### Lesson 3: PHP Control Structures and Conditionals
-[Lesson 3](leson3) demo consists of the following topics:
+[Lesson 3](lesson3) demo consists of the following topics:
 - **demo1** - If Statements
 - **demo2** - Conditional HTML Output
 - **demo3** - Comparison and Logical Operators
