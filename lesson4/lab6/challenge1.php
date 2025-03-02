@@ -7,14 +7,29 @@
     $challenge = '<b>Challenge 1:</b> Fahrenheit to Celsius';
 
     $body = <<< 'EOD'
-            Follow the instructions below:
+            Write a function called `fahrenheitToCelsius` that takes a temperature in Fahrenheit as an argument and returns the temperature in Celsius.
 
-            Create a multiplication table using a nested `for` loop.
+            - Create a named function called `fahrenheitToCelsius` that takes a fahrenheit temperature as an argument. 
+            - Return the temperature converted to Celsius.
+            - Print to the screen like "68F = 20C. You can use the &deg; entity for the degrees symbol. and 
+                &degC for celsius
+            - For extra points, convert to an arrow function +2pts
+
+                sample output   68°F = 20°
     EOD; // heredoc
 
     // Your solution goes here..
+    $fahrenheit = 68;
 
-    $output = '';
+    // function fahrenheitToCelsius($fahrenheit) {
+    //     return ($fahrenheit - 32) * 5 / 9;
+    // }
+
+    // Using Arrow Function
+    $fahrenheitToCelsius = fn($fahrenheit) => ($fahrenheit - 32) * 5 / 9;
+
+    $celsius = $fahrenheitToCelsius($fahrenheit);
+    $output = "$fahrenheit&deg;F = " . round($celsius) . "&deg;C";
 
 ?>
 
@@ -39,6 +54,7 @@
             <div class="bg-white rounded-lg shadow-md p-6">
                 <h2 class="text-2xl font-semibold mb-4"><?= $header2 ?></h2>
                 <h2 class="text-xl font-semibold my-4"><?= $challenge ?></h2>
+                <p><?= nl2br($body)?></p>
                 <p class="font-bold mb-4"><br>Solution: </p>
                 <!-- Output -->
                 <p class="text-xl"><?= $output?></p>
@@ -47,3 +63,9 @@
     </body>
 <!-- Pia Macalanda -->
 </html>
+
+<!-- 
+🍓 Arrow function sses fn instead of function.
+No need for {} or return keyword.
+Arrow functions are one-liners and automatically return the result. 
+-->

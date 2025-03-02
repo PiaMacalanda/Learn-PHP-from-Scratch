@@ -42,6 +42,22 @@ $lessons = [
     "Lesson 4: Functions 🚧" => [
         "lesson4.php",
         "files" => [".php"]
+    ],
+
+    
+    "Lesson 5: Object Oriented Programming 🚧" => [
+        "lesson5.php",
+        "files" => [".php"]
+    ],
+
+    "Lesson 6: Super Globals 🚧" => [
+        "lesson6.php",
+        "files" => [".php"]
+    ],
+
+    "Lesson 7: Database Integration and PDO 🚧" => [
+        "lesson7.php",
+        "files" => [".php"]
     ]
 ];
 
@@ -72,7 +88,7 @@ $lab_activities = [
 
         <div class="mt-6">
             <h3 class="text-xl font-semibold text-pink-700 flex items-center">🧺 Lessons</h3>
-            <div class="bg-pink-200 p-4 rounded-md shadow-md border-2 border-pink-400">
+            <div class="bg-pink-100 p-4 rounded-md shadow-md border-2 border-pink-400 max-h-52 overflow-y-auto">
                 <?php foreach ($lessons as $title => $lesson): ?>
                     <details class="mb-2 bg-white p-2 rounded-md shadow-sm">
                         <summary class="cursor-pointer font-semibold text-pink-800 flex items-center"> 🍃 <?php echo $title; ?> </summary>
@@ -88,7 +104,7 @@ $lab_activities = [
 
         <div class="mt-6">
             <h3 class="text-xl font-semibold text-pink-700 flex items-center">🧺 Lab Activities</h3>
-            <div class="bg-pink-200 p-4 rounded-md shadow-md border-2 border-pink-400">
+            <div class="bg-pink-200 p-4 rounded-md shadow-md border-2 border-pink-400 max-h-52 overflow-y-auto">
                 <?php foreach ($lab_activities as $title => $labs): ?>
                     <details class="mb-2 bg-white p-2 rounded-md shadow-sm">
                         <summary class="cursor-pointer font-semibold text-pink-800 flex items-center"> 🍃 <?php echo $title; ?> </summary>

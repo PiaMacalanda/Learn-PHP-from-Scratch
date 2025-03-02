@@ -7,15 +7,29 @@
     $challenge = '<b>Challenge 2:</b> Print Names In Uppercase';
 
     $body = <<< 'EOD'
-            Follow the instructions below:
+            Create a function called `printNamesToUpperCase` that takes an array of names as an argument. The function should loop through the array and print each name to the screen in uppercase letters.
 
-            Create a multiplication table using a nested `for` loop.
+            Hints:
+            $names = ['Alice', 'Bob', 'Charlie', 'David'];
+            - You can use the `strtoupper` function to convert a string to uppercase.
+
+            Sample  output:
+                    ALICE
+                    BOB
+                    CHARLIE
+                    DAVID
+
     EOD; // heredoc
 
     // Your solution goes here..
+    $names = ['Alice', 'Bob', 'Charlie', 'David'];
+    
+    function printNamesToUpperCase($names) {
+        return array_map('strtoupper', $names);
+    }
 
-    $output = '';
-
+    $uppercaseNames = printNamesToUpperCase($names);
+    $output = implode('<br>', $uppercaseNames);
 ?>
 
 <!DOCTYPE html>
@@ -39,6 +53,7 @@
             <div class="bg-white rounded-lg shadow-md p-6">
                 <h2 class="text-2xl font-semibold mb-4"><?= $header2 ?></h2>
                 <h2 class="text-xl font-semibold my-4"><?= $challenge ?></h2>
+                <p><?= nl2br($body)?></p>
                 <p class="font-bold mb-4"><br>Solution: </p>
                 <!-- Output -->
                 <p class="text-xl"><?= $output?></p>
