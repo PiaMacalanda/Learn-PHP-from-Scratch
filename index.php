@@ -39,13 +39,20 @@ $lessons = [
                     "lesson3\demo4_conditional_in_loop.php"]
     ],
 
-    "Lesson 4: Functions 🚧" => [
+    "Lesson 4: Functions" => [
         "lesson4.php",
-        "files" => [".php"]
+        "files" => ["demo1.php",
+                    "demo2.php",
+                    "demo3.php",
+                    "demo4.php",
+                    "demo5.php",
+                    "demo6.php",
+                    "demo7.php",
+                    "demo8.php"]
     ],
 
     
-    "Lesson 5: Object Oriented Programming 🚧" => [
+    "Lesson 5: Object Oriented Programming" => [
         "lesson5.php",
         "files" => [".php"]
     ],
@@ -75,10 +82,13 @@ $lab_activities = [
         "lesson3\lab4\challenge.php"],
     "Lab 5:" => [
         "lesson3\lab5\challenge.php"],
-    "Lab 6" => [
+    "Lab 6: " => [
         "lesson4\lab6\challenge1.php", 
         "lesson4\lab6\challenge2.php", 
-        "lesson4\lab6\challenge3.php"]
+        "lesson4\lab6\challenge3.php"],
+    "Lab 7: Object Oriented Programming" => [
+        "lesson5\lab7\challenge1.php" => "Challenge 1: Bank Transaction", 
+        "lesson5\lab7\challenge2.php" => "Challenge 2: String Utility"],
 
 ];
 ?>

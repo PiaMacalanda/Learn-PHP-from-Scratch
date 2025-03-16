@@ -4,12 +4,12 @@
     $sentence = 'Lab Activity 7🍓🎮';
     $hashtag = '#lesson5 #OOP';
     $header2 = $sentence.' '.$hashtag;
-    $challenge = '<b>Challenge 1:</b> Bank Transaction🏢';
+    $challenge = '<b>Challenge 2:</b> String Utility📝';
 
     $body = <<< 'EOD'
             Follow the instructions below:
 
-            Create a multiplication table using a nested `for` loop.
+            Implement the StringUtility class with static methods.
     EOD; // heredoc
 
     class BankTransaction {
@@ -51,14 +51,25 @@
         }
     }
 
-    $customer1 = new BankTransaction("BDO", "W", "ACNO0000001", 3000);
-    $customer2 = new BankTransaction("BPI", "D", "ACNO0000002", 3000);
-    $customer3 = new BankTransaction("METROBANK", "AB", "ACNO0000003", 3000);
+    class StringUtility {
+        public static function shout($string) {
+            return strtoupper($string) . '!';
+        }
 
-    $output = "<b>Object: customer1</b><br>" . $customer1->getInfo() . $customer1->newBalance() . "<br><br>";
-    $output .= "<b>Object: customer2</b><br>" . $customer2->getInfo() . $customer2->newBalance() . "<br><br>";
-    $output .= "<b>Object: customer3</b><br>" . $customer3->getInfo() . $customer3->newBalance();
+        public static function whisper($string) {
+            return strtolower($string) . '.';
+        }
 
+        public static function repeat($string, $times = 2) {
+            return str_repeat($string . ' ', $times);
+        }
+    }
+
+    $output = "<b>String Utility Examples</b><br>";
+    $output .= "Shout: " . StringUtility::shout('Hello World') . "<br>";
+    $output .= "Whisper: " . StringUtility::whisper('Hello World') . "<br>";
+    $output .= "Repeat (default): " . StringUtility::repeat('Hello World') . "<br>";
+    $output .= "Repeat (5x): " . StringUtility::repeat('Hello World', 5) . "<br>";
 ?>
 
 <!DOCTYPE html>
@@ -66,15 +77,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script>
-            tailwind.config = {
-                corePlugins: {
-                    preflight: false,
-                }
-            };
-        </script>
         <script src="https://cdn.tailwindcss.com"></script>
-
         <title>
             <?= "Learn PHP From Scratch - Pia" ?>
         </title>
