@@ -9,7 +9,6 @@
     $body = <<< 'EOD'
             Follow the instructions below:
 
-            Create a multiplication table using a nested `for` loop.
     EOD; // heredoc
 
     class BankTransaction {

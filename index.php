@@ -69,26 +69,32 @@ $lessons = [
 ];
 
 $lab_activities = [
-    "Lab 1: John Doe Output display" => ["lesson1\lab1.php" => "Challenge 1: John Doe Output display"],
+    "Lab 1: John Doe Output display" => ["lesson1\lab1.php"],
+
     "Lab 2: Array Challenge" => [ 
-        "lesson2\lab2\challenge1.php" => "Challenge1: Sum of Array", 
-        "lesson2\lab2\challenge2.php" => "Cahllenge2: Colors of Array", 
-        "lesson2\lab2\challenge3.php" => "Cahallenge3: Job Listing"],
+        "lesson2\lab2\challenge1.php", 
+        "lesson2\lab2\challenge2.php", 
+        "lesson2\lab2\challenge3.php"],
+
     "Lab 3: Control Structures and COnditionals" => [
         "lesson2\lab3\challenge1.php",
         "lesson2\lab3\challenge2.php", 
         "lesson2\lab3\challenge3.php"],
+        
     "Lab 4: Functions" => [
         "lesson3\lab4\challenge.php"],
+
     "Lab 5:" => [
         "lesson3\lab5\challenge.php"],
+
     "Lab 6: " => [
         "lesson4\lab6\challenge1.php", 
         "lesson4\lab6\challenge2.php", 
         "lesson4\lab6\challenge3.php"],
+        
     "Lab 7: Object Oriented Programming" => [
-        "lesson5\lab7\challenge1.php" => "Challenge 1: Bank Transaction", 
-        "lesson5\lab7\challenge2.php" => "Challenge 2: String Utility"],
+        "lesson5\lab7\challenge1.php", 
+        "lesson5\lab7\challenge2.php"],
 
 ];
 ?>
