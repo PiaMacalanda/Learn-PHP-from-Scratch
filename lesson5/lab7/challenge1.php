@@ -97,3 +97,30 @@
     </body>
 <!-- Pia Macalanda -->
 </html>
+
+
+<!-- . Create a class called `BankTransaction` that has the following properties: (2pts)
+
+- `bank_name`    note: example  BDO
+- `transaction`  note: the value for this is 'D' for deposit or 'W' for withdraw
+- `account_no`   note: example ACN0000001
+- `amount`       note: the value for this is the amount to deposit or to withdraw
+- `savings_amount` note: Balance amount money savings.
+
+2. The `account_no` `amount` and savings_amount property should be `private`. And savings_amount  default is 10000. (2pts)
+
+3. Create a constructor that takes in the bank_name,transaction,account_no and amount as arguments and sets the values of the properties. (3pts)
+
+4. Create a method called `getInfo` that will show the following: (3pts)
+
+   Bank Name: BDO
+   Customer Account No: ACNO0000001
+   Type of Transaction: W
+   Current Balance: 10000
+   Amount: 3000
+
+
+5. Create a method called `newBalance` that returns the new balance after  deposit or withdraw (4pts)
+
+6. Create 3 new instances/objects of the `BankTransaction` class and call the `getInfo`  and `newBalance` method (5pts) -->
+
