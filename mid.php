@@ -18,7 +18,6 @@ function getNumerologyValue($name) {
     $personalitySolution = [];
     $destinySolution = [];
 
-
     foreach (str_split($name) as $char) {
         if (isset($numerologyChart[$char])) {
             $destinyNumber += $numerologyChart[$char];
@@ -46,7 +45,10 @@ function getNumerologyValue($name) {
 }
 
 function reduceNumber($num) {
-    while ($num > 9 && !in_array($num, [11, 22, 33])) {
+    while ($num > 9) {
+        if (in_array($num, [11, 22, 33])) {
+            return $num == 11 ? 2 : ($num == 22 ? 4 : 6);
+        }
         $num = array_sum(str_split($num));
     }
     return $num;
@@ -63,12 +65,9 @@ function getDestinyMeaning($num){
         7 => "The Seeker",
         8 => "Balance and Power",
         9 => "The Caretaker",
-        11 => "The Intuitive",
-        22 => "Master Builder",
-        33 => "Master Teacher"
     ];
     
-    return $destinyChart[$num];
+    return $destinyChart[$num] ?? "Unknown";
 }
 
 function getPersonalityMeaning($num){
@@ -82,11 +81,9 @@ function getPersonalityMeaning($num){
         7 => "analysis, understanding, awareness, studious, meditating",
         8 => "practical endeavors, status-oriented, power-seeking, high-material goals",
         9 => "humanitarian, giving, selflessness, obligations, creative expression",
-        11 => "higher spiritual plane, intuitive, illumination, idealist, a dreamer",
-        22 => "master builder, large endeavors, powerful force, leadership"
     ];
     
-    return $personalityChart[$num];
+    return $personalityChart[$num] ?? "Unknown";
 }
 
 $names = ["John Smith"];
